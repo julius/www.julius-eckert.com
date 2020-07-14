@@ -1,114 +1,137 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Julius Eckert</title>
-	<link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta http-equiv="content-language" content="en">
-	<meta name="robots" content="index,follow,noarchive">
-	<meta name="author" content="Julius Eckert">
-	<meta name="publisher" content="Julius Eckert">
-	<meta name="copyright" content="Julius Eckert">
-	<meta name="description" content="Julius Eckert is an Entrepreneur and Software Engineer.">
-	<style>
-		h1 {
-			font-family: Glegoo, serif;
-			font-size: 40px;
-			line-height: 60px;
-			width: 100%;
-			border-bottom: solid 1px #333;
-			color: #444;
-			font-weight: 300;
-			margin: 20px 0 60px 0;
-		}
+    <head>
+		<title>Julius Eckert</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="content-language" content="en" />
+        <meta name="robots" content="index,follow,noarchive" />
+        <meta name="author" content="Julius Eckert" />
+        <meta name="publisher" content="Julius Eckert" />
+        <meta name="copyright" content="Julius Eckert" />
+        <meta name="description" content="Julius Eckert is an Entrepreneur and Software Engineer." />
+        <style>
+            html,
+            body {
+                font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+                font-weight: 300;
+                letter-spacing: 0.00938em;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
 
-		p {
-			display: block;
-			font-family: Glegoo, sans-serif;
-			font-size: 20px;
-			line-height: 40px;
-			color: #666;
-			margin: 0 0 80px 0;
-		}
+            div {
+                box-sizing: border-box;
+            }
 
-		a {
-			color: #444;
-			text-decoration: underline;
-		}
+            h1 {
+                font-family: 'Arial Black', 'Arial', sans-serif;
+                font-size: 40px;
+                line-height: 1;
+                width: 100%;
+                color: #444;
+                font-weight: 800;
+                margin: 20px 0 20px 0;
+            }
 
-		img.foto {
-			display: block;
-			width: 400px;
-			float: right;
-			margin: 0 0 0 120px;
+            p {
+                display: block;
+                color: #666;
+                margin: 0 0 40px 0;
+            }
 
-			filter: gray; /* IE6-9 */
-			filter: grayscale(1); /* Firefox 35+ */
-			-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-		}
-		img.foto:hover {
-			filter: none;
-			-webkit-filter: grayscale(0);
-		}
+            a {
+                color: #444;
+                text-decoration: underline;
+            }
 
-		.container {
-			width: 900px;
-			margin: 0 auto;
-		}
+            img.foto {
+                display: block;
+                width: 100%;
+                max-width: 600px;
+				margin: 0 0 60px;
+				border-radius: 30px;
+            }
 
-		.footer {
-			font-family: Glegoo, sans-serif;
-			text-align: center;
-			position: fixed;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			padding: 10px 0;
-			background: white;
-		}
+            @media (min-width: 900px) {
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 80px;
+                }
+                .content {
+                    grid-column: 1;
+                    grid-row: 1;
+					margin: 20px 0 0 0;
+                }
+                img.foto {
+                    grid-column: 2;
+                    grid-row: 1;
+					margin: 0;
+                }
+            }
 
-		.footer a {
-			color: #888;
-			text-decoration: none;
-		}
-		.footer a:hover {
-			color: #666;
-			text-decoration: underline;
-		}
-	</style>
-</head>
-<body>
-	<div class="container">
-		<h1>Julius Eckert</h1>
-		<img src="foto2.png" class="foto">
+            .container {
+                width: 100%;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 20px;
+            }
 
-		<p>
-			Julius Eckert is an entrepreneur and software engineer.
-		</p>
+            .footer {
+                text-align: center;
+                width: 100%;
+                margin: 160px 0 0 0;
+            }
 
-		<p>
-			With a decade of professional experience, he is building small companies and is helping other businesses succeed with their software needs.
-		</p>
+            .footer a {
+                color: #aaa;
+            }
+            .footer a:hover {
+                color: #888;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+			<h1>Julius Eckert</h1>
+		</div>
 
-		<p>
-			Get in contact:
-			<br>
-			<a href="mailto:eckert.julius@gmail.com">eckert.julius@gmail.com</a>
-		</p>
-	</div>
+		<div class="container grid-container">
+            <img src="julius1_medium.jpg" class="foto" />
 
-	<div class="footer">
-		<a href="impressum.html">Impressum</a>
-	</div>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3294256-3"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+            <div class="content">
+                <p>
+                    Julius Eckert is an entrepreneur and software engineer.
+                </p>
 
-	gtag('config', 'UA-3294256-3');
-	</script>
-</body>
+                <p>
+                    With 15 years of professional experience, he is building small companies and is helping other
+                    businesses succeed with their software needs.
+                </p>
+
+                <p>
+                    Contact:
+                    <br />
+                    <a href="mailto:julius@julius-eckert.com">julius@julius-eckert.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="impressum.html">Impressum</a>
+        </div>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3294256-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-3294256-3');
+        </script>
+    </body>
 </html>
